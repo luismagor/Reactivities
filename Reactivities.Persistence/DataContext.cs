@@ -10,6 +10,7 @@ namespace Reactivities.Persistence
         }
         
         public DbSet<Value> Values { get; set; }
+        public DbSet<Activity> Activities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
