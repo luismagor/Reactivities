@@ -1,7 +1,9 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using Reactivities.Application.Errors;
 using Reactivities.Persistence;
 
 namespace Reactivities.Application.Activities
@@ -28,7 +30,7 @@ namespace Reactivities.Application.Activities
 
                 if (activity == null)
                 {
-                    throw new Exception("Could not find activity");
+                    throw new RestException(HttpStatusCode.NotFound, new { activity = "Not Found"});
                 }
 
                 _context.Remove(activity);
