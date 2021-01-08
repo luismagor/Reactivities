@@ -1,14 +1,44 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Reactivities.Domain;
 
 namespace Reactivities.Persistence
 {
     public class Seed
     {
-        public static void SeedData(DataContext context)
+        public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
         {
+            if (!userManager.Users.Any())
+            {
+                var users = new List<AppUser>
+                {
+                    new AppUser
+                    {
+                        DisplayName = "Rachel",
+                        UserName = "rachel",
+                        Email = "rachel@example.com"
+                    },
+                    new AppUser
+                    {
+                        DisplayName = "Ross",
+                        UserName = "ross",
+                        Email = "ross@example.com"
+                    },
+                    new AppUser
+                    {
+                        DisplayName = "Monica",
+                        UserName = "monica",
+                        Email = "monica@example.com"
+                    },
+                };
+                foreach (var user in users)
+                {
+                    await userManager.CreateAsync(user, "Pass1234!");
+                }
+            }
             if (!context.Activities.Any())
             {
                 var activities = new List<Activity>

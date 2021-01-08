@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Persistence", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.API", "Reactivities.API\Reactivities.API.csproj", "{44EF9438-2342-4649-9A46-A7E1F95D05B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactivities.Infrastructure", "Reactivities.Infrastructure\Reactivities.Infrastructure.csproj", "{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{44EF9438-2342-4649-9A46-A7E1F95D05B6}.Release|x64.Build.0 = Release|Any CPU
 		{44EF9438-2342-4649-9A46-A7E1F95D05B6}.Release|x86.ActiveCfg = Release|Any CPU
 		{44EF9438-2342-4649-9A46-A7E1F95D05B6}.Release|x86.Build.0 = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|x64.Build.0 = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|x64.Build.0 = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA1D28C3-2ACF-4BA4-AA74-EB503058E49B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
